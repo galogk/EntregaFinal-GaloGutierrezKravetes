@@ -26,6 +26,7 @@ function App() {
           <Route path="/contacto" element={<p>Informacion de Contacto falsa</p>} />
           <Route path="/productos" element={<ItemList productos={productos}/>} />
           <Route path="/productos/:id" element={<ItemDetalle productos={productos}/>} />
+          <Route path="/carrito" element={<p>Texto Placeholder para agregar mas tarde: Productos agregados junto con numeros que representan la cantidad total de elementos que agregaste</p>} />
           <Route path="*" element={<p>404 - Pagina no encontrada.</p>} />
         </Routes>
       </div>
