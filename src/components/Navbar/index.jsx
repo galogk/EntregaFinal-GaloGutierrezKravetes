@@ -7,7 +7,7 @@ const Navbar = () => {
     textDecoration: "underline",
   };
   return <nav className={styles.navbar}>
-    <NavLink style={({isActive}) => (isActive ? activeStyle : undefined)} to="/inicio"><p>Inicio</p></NavLink>
+    <NavLink style={({isActive}) => (isActive ? activeStyle : undefined)} to="/"><p>Inicio</p></NavLink>
     <NavLink style={({isActive}) => (isActive ? activeStyle : undefined)} to="/nosotros"><p>Sobre Nosotros</p></NavLink>
     <NavLink style={({isActive}) => (isActive ? activeStyle : undefined)} to="/contacto"><p>Contactanos</p></NavLink>
     <NavLink style={({isActive}) => (isActive ? activeStyle : undefined)} to="/productos"><p>Productos</p></NavLink>

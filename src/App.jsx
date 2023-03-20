@@ -21,7 +21,7 @@ function App() {
         <h1>TreKIT</h1>
         <Navbar />
         <Routes>
-          <Route path="/inicio" element={<p>Bienvenido a nuestro sitio web sobre nuestra empresa: TreKIT!</p>}/>
+          <Route path="/" element={<p>Bienvenido a nuestro sitio web sobre nuestra empresa: TreKIT!</p>}/>
           <Route path="/nosotros" element={<p>Texto Placeholder para agregar mas tarde: Informacion sobre nuestra empresa</p>} />
           <Route path="/contacto" element={<p>Informacion de Contacto falsa</p>} />
           <Route path="/productos" element={<ItemList productos={productos}/>} />
