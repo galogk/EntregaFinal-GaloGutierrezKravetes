@@ -2,11 +2,12 @@ import './App.css';
 import Navbar from './components/Navbar';
 import ItemList from './components/ItemList';
 import ItemDetalle from "./components/ItemDetalle";
+import CartContext from "./components/CartContext"
+import Pagar from "./components/Pagar"
 import { Routes, Route } from "react-router-dom";
 
+
 function App() {
-
-
   return (
       <div>
         <h1>TreKIT</h1>
@@ -22,7 +23,8 @@ function App() {
           <Route path="/productos/jewelry" element={<ItemList category="jewelery"/>} />
           <Route path="/productos/electronics" element={<ItemList category="electronics"/>} />
           <Route path="/productos/:categoria/:id" element={<ItemDetalle/>} />
-          <Route path="/carrito" element={<p>Texto Placeholder para agregar mas tarde: Productos agregados junto con numeros que representan la cantidad total de elementos que agregaste</p>} />
+          <Route path="/carrito" element={<CartContext/>} />
+          <Route path="/pagar" element={<Pagar/>} />
           <Route path="*" element={<p>404 - Pagina no encontrada.</p>} />
         </Routes>
       </div>

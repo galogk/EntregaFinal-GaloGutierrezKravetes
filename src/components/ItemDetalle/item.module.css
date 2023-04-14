@@ -31,3 +31,19 @@ div img {
     margin-left:auto;
     margin-right:auto;
 }
+
+button {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #548687;
+    background-color: #273043;
+    padding: 10px 35px 10px 35px;
+    margin: 10px 50px 10px 50px;
+    font-size:20px;
+}
+
+button:hover {
+  color: yellowgreen;
+  border-color:green;
+  background-color: #124152;
+}

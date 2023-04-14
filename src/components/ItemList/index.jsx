@@ -1,7 +1,7 @@
 import styles from "./itemlist.module.css";
 import Item from "../Item";
 import Header from "../Header";
-import { useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 
 const itemlist = ({category}) => {
     const [productos, setProductos] = useState([]);
@@ -16,7 +16,6 @@ const itemlist = ({category}) => {
             .then((data) => setProductos(data));  
         }
     }, []);
-
     return (
         <div>
             <Header />
