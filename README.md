@@ -18,4 +18,4 @@ Firebase: Usado para poder anotar todas las compras realizadas por el usuario, y
  -InitializeApp
  -Firestore (collection, getDocs, query, where): Usados para ingresar a la base de datos de mi proyecto de firebase y sus productos que yo ingrese al documento.
  
- ![](https://github.com/galogk/EntregaFinal-Galogk/blob/master/opera_0OfySs5XZR.gif)
+ ![](https://github.com/galogk/EntregaFinal-Galogk/blob/master/opera_K0Yajku3rG.gif)
