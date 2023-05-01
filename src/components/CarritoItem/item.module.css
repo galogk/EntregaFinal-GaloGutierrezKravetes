@@ -1,0 +1,53 @@
+.container {
+    border: 3px solid #548687;
+    background-color: #1a4242;
+    padding: 10px;
+    margin: 10px;
+    width:500px;
+    height:650px;
+}
+
+.extraInfo{
+    border: 2px solid #548687;
+    background-color: #2b2b53;
+    display:flex;
+    margin-left:2em;
+    margin-right:2em;
+    justify-content: center;
+}
+
+.extraInfo p{
+    background-color: #273043;
+}
+
+.info p{
+    border: 2px solid #548687;
+    padding:5px;
+    margin-left:auto;
+    margin-right:auto;
+    text-decoration:none;
+    color:white;
+}
+
+.title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border: 3px solid #548687;
+    padding:1em;
+    background-color:#2b2b53;
+    min-height:48px;
+}
+
+.img {
+    border: 3px solid #548687;
+    margin:auto;
+    margin-top:1em;
+    padding:1em;
+    background-color: #2b2b53;
+    width:fit-content;
+}
+
+.buttons {
+    display:flex;
+}

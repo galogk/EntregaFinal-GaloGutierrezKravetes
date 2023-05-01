@@ -19,3 +19,10 @@
   border-color:green;
   background-color: #124152;
 }
+
+.carrito {
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #548687;
+  padding:0.8em;
+}

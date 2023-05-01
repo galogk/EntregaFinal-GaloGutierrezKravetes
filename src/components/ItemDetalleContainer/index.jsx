@@ -1,5 +1,6 @@
 import React from 'react'
 import ItemDetalle from '../ItemDetalle'
+import Header from "../Header"
 import {useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
 import { collection, getDocs, query, where } from 'firebase/firestore';
@@ -20,12 +21,15 @@ function index() {
       })
     }, [id]);
 
-  console.log(productos[0])
   if (productos === undefined) {
     return <>Cargando...</>
   }
-  return <ItemDetalle productos={productos[0]}/>
-  
+  return (
+    <>
+      <Header></Header>
+      <ItemDetalle productos={productos[0]}/>
+    </>
+  )
 }
 
 export default index

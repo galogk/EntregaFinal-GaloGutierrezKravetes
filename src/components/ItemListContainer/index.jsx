@@ -8,7 +8,10 @@ import {collection, getDocs, query, where} from "firebase/firestore"
 import { useParams } from "react-router-dom"
 
 const index = () => {
-  const { categoria } = useParams()
+  let { categoria } = useParams()
+  if (categoria === undefined){
+    categoria = "todo"
+  }
   const [productos, setProductos] = useState([]);
   const productosRef = collection(db, "items")
   const q = query(
@@ -36,12 +39,9 @@ const index = () => {
     }
 }, [categoria]);
 
-console.log(productos)
-
 if (productos.length == []) {
  return (
   <>
-  <h1 className={styles.segundoTitle}>Nuestros Productos</h1>
       <Header />
       <>Cargando...</>
   </>
@@ -49,7 +49,6 @@ if (productos.length == []) {
 } else {
   return (
     <>
-    <h1 className={styles.segundoTitle}>Nuestros Productos</h1>
         <Header />
         <div className={styles.shopping}>
         <ItemList productos={productos} />
