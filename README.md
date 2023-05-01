@@ -17,3 +17,5 @@ React Icons, BsFillCartFill: Usado para representar el icono del carrito de comp
 Firebase: Usado para poder anotar todas las compras realizadas por el usuario, y posiblemente la lista de productos sin tener que usar una pagina externa.
  -InitializeApp
  -Firestore (collection, getDocs, query, where): Usados para ingresar a la base de datos de mi proyecto de firebase y sus productos que yo ingrese al documento.
+ 
+ ![](https://github.com/galogk/EntregaFinal-Galogk/blob/master/opera_0OfySs5XZR.gif)
