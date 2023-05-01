@@ -1,9 +1,12 @@
 import { BsFillCartFill } from "react-icons/bs";
 
-function cartwidget(number) {
-
+function cartwidget({cuenta}) {
   return (
-    <BsFillCartFill/>
+    <div>
+        <BsFillCartFill/>
+        {cuenta}
+    </div>
+    
   )
 }
 

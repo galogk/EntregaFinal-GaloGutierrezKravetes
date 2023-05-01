@@ -1,13 +1,12 @@
-body {
-    text-align:cete
-}
-
 .container {
     border: 3px solid #548687;
+    background-color:#1a4242;
     padding: 10px;
     margin: auto;
     width:500px;
     height:fit-content;
+    padding-left:2em;
+    padding-right:2em;
 }
 
 div img {
@@ -16,20 +15,59 @@ div img {
     max-height:250px;
 }
 
-
-.info{
-    border: 1px solid #1a4242;
-    max-width:500px;
-    display:grid;
-    grid-template-columns: 450px;
-    justify-content: center;
-}
-
 .info p{
-    border: 1px solid #548687;
+    border: 2px solid #548687;
     padding:5px;
     margin-left:auto;
     margin-right:auto;
+}
+
+.title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border: 3px solid #548687;
+    padding:1em;
+    background-color:#2b2b53;
+    min-height:48px;
+}
+
+.extraInfo{
+    border: 2px solid #548687;
+    background-color: #2b2b53;
+    display:flex;
+    margin-left:2em;
+    margin-right:2em;
+    justify-content: center;
+}
+
+.extraInfo p{
+    background-color: #273043;
+}
+
+.img {
+    border: 3px solid #548687;
+    margin:auto;
+    margin-top:1em;
+    padding:1em;
+    background-color: #2b2b53;
+    width:fit-content;
+}
+
+.img img {
+    border: 3px solid #548687;
+    background-color: #273043;
+}
+
+.img p {
+    border: 3px solid #548687;
+    background-color:#273043;
+    padding:1em;
+}
+
+.addToCart{
+    display:flex;
+    align-items: center;
 }
 
 button {
@@ -38,7 +76,7 @@ button {
     border-color: #548687;
     background-color: #273043;
     padding: 10px 35px 10px 35px;
-    margin: 10px 50px 10px 50px;
+    margin: 10px auto 10px auto;
     font-size:20px;
 }
 

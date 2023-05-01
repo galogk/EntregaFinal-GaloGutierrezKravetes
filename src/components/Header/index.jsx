@@ -7,11 +7,11 @@ function header() {
   };
   return (
     <nav className={styles.header}>
-    <NavLink reloadDocument style={({isActive}) => (isActive ? activeStyle : undefined)} to="/productos/ "><p>Todos los productos</p></NavLink>
-    <NavLink reloadDocument style={({isActive}) => (isActive ? activeStyle : undefined)} to="/productos/men"><p>Ropa para hombres</p></NavLink>
-    <NavLink reloadDocument style={({isActive}) => (isActive ? activeStyle : undefined)} to="/productos/women"><p>Ropa para mujeres</p></NavLink>
-    <NavLink reloadDocument style={({isActive}) => (isActive ? activeStyle : undefined)} to="/productos/jewelry"><p>Joyería</p></NavLink>
-    <NavLink reloadDocument style={({isActive}) => (isActive ? activeStyle : undefined)} to="/productos/electronics"><p>Electronicos</p></NavLink>
+    <NavLink  style={({isActive}) => (isActive ? activeStyle : undefined)} to="/productos/todo"><p>Todos los productos</p></NavLink>
+    <NavLink  style={({isActive}) => (isActive ? activeStyle : undefined)} to="/productos/men's clothing"><p>Ropa para hombres</p></NavLink>
+    <NavLink  style={({isActive}) => (isActive ? activeStyle : undefined)} to="/productos/women's clothing"><p>Ropa para mujeres</p></NavLink>
+    <NavLink  style={({isActive}) => (isActive ? activeStyle : undefined)} to="/productos/jewelery"><p>Joyería</p></NavLink>
+    <NavLink  style={({isActive}) => (isActive ? activeStyle : undefined)} to="/productos/electronics"><p>Electronicos</p></NavLink>
     </nav>
   )
 }

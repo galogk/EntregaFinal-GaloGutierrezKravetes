@@ -1,28 +1,30 @@
 import './App.css';
+import Home from './components/Home'
+import Contacto from './components/Contacto'
+import SobreNosotros from './components/SobreNosotros'
 import Navbar from './components/Navbar';
-import ItemList from './components/ItemList';
-import ItemDetalle from "./components/ItemDetalle";
+import ItemListContainer from './components/ItemListContainer';
+import ItemDetalleContainer from "./components/ItemDetalleContainer";
 import CartContext from "./components/CartContext"
 import Pagar from "./components/Pagar"
+import styles from "./components/HomeStyles/home.module.css"
 import { Routes, Route } from "react-router-dom";
-
+import { CarritoCounter } from './contexts/carritoCounter';
 
 function App() {
   return (
       <div>
-        <h1>TreKIT</h1>
-        <Navbar />
+        <h1 className={styles.title}>TreKIT</h1>
+        <CarritoCounter.Provider value={3}>
+          <Navbar />
+        </CarritoCounter.Provider>
         <Routes>
-          <Route path="/" element={<p>Bienvenido a nuestro sitio web sobre nuestra empresa: TreKIT!</p>}/>
-          <Route path="/nosotros" element={<p>Texto Placeholder para agregar mas tarde: Informacion sobre nuestra empresa</p>} />
-          <Route path="/contacto" element={<p>Informacion de Contacto falsa</p>} />
-          <Route path="/productos" element={<ItemList category="todo"/>} />
-          <Route path="/productos/:id" element={<ItemDetalle/>} />
-          <Route path="/productos/men" element={<ItemList category="men's clothing"/>} />
-          <Route path="/productos/women" element={<ItemList category="women's clothing"/>} />
-          <Route path="/productos/jewelry" element={<ItemList category="jewelery"/>} />
-          <Route path="/productos/electronics" element={<ItemList category="electronics"/>} />
-          <Route path="/productos/:categoria/:id" element={<ItemDetalle/>} />
+          <Route path="/" element={<Home/>}/>
+          <Route path="/nosotros" element={<SobreNosotros/>} />
+          <Route path="/contacto" element={<Contacto/>} />
+          <Route path="/productos/" element={<ItemListContainer/>} />
+          <Route path="/productos/:categoria" element={<ItemListContainer/>} />
+          <Route path="/productos/:categoria/:id" element={<ItemDetalleContainer/>} />
           <Route path="/carrito" element={<CartContext/>} />
           <Route path="/pagar" element={<Pagar/>} />
           <Route path="*" element={<p>404 - Pagina no encontrada.</p>} />
